@@ -6,6 +6,11 @@
 	import GalleryVerticalEnd from 'lucide-svelte/icons/gallery-vertical-end';
 	import Map from 'lucide-svelte/icons/map';
 	import Layers from 'lucide-svelte/icons/layers';
+	import Table from 'lucide-svelte/icons/table';
+	import FileText from 'lucide-svelte/icons/file-text';
+	import AlertCircle from 'lucide-svelte/icons/alert-circle';
+	import Palette from 'lucide-svelte/icons/palette';
+	import Component from 'lucide-svelte/icons/component';
 
 	// Define component navigation structure
 	const data = {
@@ -33,74 +38,109 @@
 		],
 		navMain: [
 			{
-				title: 'shadcn-svelte',
+				title: 'Shadcn-Svelte',
 				url: '#',
 				icon: Layers,
 				isActive: true,
 				items: [
 					{
-						title: 'Basic Table',
-						url: '/table-example'
-					},
-					{
-						title: 'Data Table',
-						url: '/data-table-example'
-					},
-					{
-						title: 'Minimal Table',
-						url: '/minimal-table'
-					},
-					{
 						title: 'Accordion',
-						url: '/accordion'
-					},
-					{
-						title: 'Aspect Ratio',
-						url: '/aspect-ratio'
-					},
-					{
-						title: 'Sidebar',
-						url: '/sidebar'
+						url: '/shadcn-svelte/accordion',
+						icon: Component
 					},
 					{
 						title: 'Alert',
-						url: '/alert'
+						url: '/shadcn-svelte/alert/default',
+						icon: AlertCircle
 					},
 					{
 						title: 'Alert Destructive',
-						url: '/alert/destructive'
+						url: '/shadcn-svelte/alert/destructive',
+						icon: AlertCircle
 					},
 					{
 						title: 'Alert Dialog',
-						url: '/alert-dialog'
+						url: '/shadcn-svelte/alert-dialog',
+						icon: AlertCircle
 					},
 					{
-						title: 'Button',
-						url: '/button'
-					},
-					{
-						title: 'Command',
-						url: '/command'
-					},
-					{
-						title: 'Combo Box',
-						url: '/combo-box'
-					},
-					{
-						title: 'Breadcrumb',
-						url: '/breadcrumb'
-					},
-					{
-						title: 'Context Menu',
-						url: '/context-menu'
+						title: 'Aspect Ratio',
+						url: '/shadcn-svelte/aspect-ratio',
+						icon: Component
 					},
 					{
 						title: 'Avatar',
-						url: '/avatar'
+						url: '/shadcn-svelte/avatar',
+						icon: Component
 					},
 					{
 						title: 'Badge',
-						url: '/badge'
+						url: '/shadcn-svelte/badge',
+						icon: Component
+					},
+					{
+						title: 'Breadcrumb',
+						url: '/shadcn-svelte/breadcrumb',
+						icon: Component
+					},
+					{
+						title: 'Button',
+						url: '/shadcn-svelte/button',
+						icon: Component
+					},
+					{
+						title: 'Command',
+						url: '/shadcn-svelte/command',
+						icon: Command
+					},
+					{
+						title: 'Combo Box',
+						url: '/shadcn-svelte/combo-box',
+						icon: Component
+					},
+					{
+						title: 'Context Menu',
+						url: '/shadcn-svelte/context-menu',
+						icon: Component
+					},
+					{
+						title: 'Date Picker',
+						url: '/shadcn-svelte/date-picker',
+						icon: Component
+					},
+					{
+						title: 'Drawer',
+						url: '/shadcn-svelte/drawer',
+						icon: Component
+					},
+					{
+						title: 'Form',
+						url: '/shadcn-svelte/form',
+						icon: FileText
+					},
+					{
+						title: 'Sidebar',
+						url: '/shadcn-svelte/sidebar',
+						icon: Component
+					},
+					{
+						title: 'Tables',
+						url: '#',
+						icon: Table,
+						items: [
+							{
+								title: 'Basic Table',
+								url: '/shadcn-svelte/tables/table-example'
+							},
+							{
+								title: 'Data Table',
+								url: '/shadcn-svelte/tables/data-table-example'
+							},
+							{
+								title: 'Minimal Table',
+								url: '/shadcn-svelte/tables/minimal-table'
+							}
+						]
 					}
 				]
 			}
@@ -110,16 +150,6 @@
 				name: 'Design Engineering',
 				url: '#',
 				icon: Frame
-			},
-			{
-				name: 'Sales & Marketing',
-				url: '#',
-				icon: ChartPie
-			},
-			{
-				name: 'Travel',
-				url: '#',
-				icon: Map
 			}
 		]
 	};
