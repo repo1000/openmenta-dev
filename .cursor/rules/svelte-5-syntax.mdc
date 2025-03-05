@@ -1,0 +1,19 @@
+---
+description: Svelte 5 Rules:
+globs: *.svelte *.svelte.ts
+alwaysApply: false
+---
+Runes-based reactivity (replace let with $state, $derived, $effect)
+Deprecated: Implicit top-level let reactivity - use $state() for mutable values
+New: Component props via $props() destructuring instead of export let
+Deprecated: Slots syntax - replace with {@render} and snippet templates
+Changed: DOM events use on[event] (e.g., onclick) instead of on:event
+New: $derived.by() for object property destructuring with reactivity
+Deprecated: $$props/$$restProps - use $props() spread syntax instead
+Changed: Client-side mount/hydrate API - use mount(Component, target)
+Warning: $effect() runs client-side only - avoid SSR state initialization
+Migration: Run npx sv migrate svelte-5 then manual fix @migration tags
+Deprecated: Svelte 4 options (immutable/accessors) in <svelte:options>
+New: $effect.root() for manual effect cleanup control
+Changed: CSS :global() modifier now requires explicit selector
+Required: Update @sveltejs/* packages to ^5.x and Vite plugin to ^4.x
